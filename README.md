@@ -1,4 +1,4 @@
-# API 99 names of Allah
+# api 99 names of Allah
 
 ## Installation notes
 1. Fork
