@@ -35,9 +35,9 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true})
         collectionName = db.collection('99-names-of-Allah')
 
         // Listener on port provided by the environment or 3000
-        // app.listen(process.env.PORT || PORT, function() {
-        //     console.log('listening on '+PORT)
-        // })
+        app.listen(process.env.PORT || PORT, function() {
+            console.log('listening on: '+PORT)
+        })
 })
 .catch(console.error);
 
@@ -93,9 +93,9 @@ app.get('/api/:order', (req,res) => {
 
 
 // Listener on port provided by the environment or 3000
-app.listen(process.env.PORT || PORT, function() {
-    console.log('listening on '+PORT)
-})
+// app.listen(process.env.PORT || PORT, function() {
+//     console.log('listening on '+PORT)
+// })
 
 // create
 
