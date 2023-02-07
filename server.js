@@ -23,8 +23,8 @@ app.use(express.json());
 // db variables
 let db, collectionName;
 // Mongo Connetion String from .env file
-// const connectionString = process.env.DB_STRING;
-const connectionString = 'mongodb+srv://dbadmin:OzE970z8tte0I4oA@cluster0.4kzzteo.mongodb.net/?retryWrites=true&w=majority';
+const connectionString = process.env.DB_STRING;
+// const connectionString = 'mongodb+srv://dbadmin:OzE970z8tte0I4oA@cluster0.4kzzteo.mongodb.net/?retryWrites=true&w=majority';
 // Connecting to MongoDB
 MongoClient.connect(connectionString, { useUnifiedTopology: true})
     .then(client => {
